@@ -12,5 +12,6 @@ Bundle 'gmarik/vundle'
 Bundle 'Wombat'
 
 " New features
+Bundle 'sessions.vim'
 Bundle 'surround.vim'
 Bundle 'Command-T'
