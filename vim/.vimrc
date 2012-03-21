@@ -52,5 +52,5 @@ colorscheme wombat
 syntax on
 
 " gui
-set guioptions+=LlRrb
-set guioptions-=LlRrb
+set guioptions+=LlRrbT
+set guioptions-=LlRrbT
