@@ -30,6 +30,11 @@ au FileType python,xml,html,css,c,java,javascript,sh set number
 nnoremap <tab> %
 vnoremap <tab> %
 
+" 80 char-width
+set textwidth=80
+set cc=+1
+hi ColorColumn guibg=#2d2d2d ctermbg=246
+
 
 " search
 set hlsearch
