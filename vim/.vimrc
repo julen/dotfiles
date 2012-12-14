@@ -33,8 +33,6 @@ vnoremap <tab> %
 " 80 char-width
 set textwidth=80
 set cc=+1
-hi ColorColumn guibg=#2d2d2d ctermbg=246
-
 
 " search
 set hlsearch
@@ -59,3 +57,5 @@ syntax on
 " gui
 set guioptions+=LlRrbT
 set guioptions-=LlRrbT
+
+hi ColorColumn guibg=#2d2d2d ctermbg=246
