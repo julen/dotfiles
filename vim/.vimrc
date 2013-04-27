@@ -33,9 +33,9 @@ au FileType python,xml,html,css,c,java,javascript,sh set number
 nnoremap <tab> %
 vnoremap <tab> %
 
-" 80 char-width
-set textwidth=80
-set cc=+1
+" 74 char-width
+set textwidth=74
+set cc=+6
 
 " search
 set hlsearch
