@@ -13,5 +13,7 @@ Bundle 'Wombat'
 
 " New features
 Bundle 'sessions.vim'
-Bundle 'surround.vim'
 Bundle 'Command-T'
+Bundle 'Syntastic'
+Bundle 'ragtag.vim'
+Bundle 'surround.vim'
