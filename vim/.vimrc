@@ -7,6 +7,9 @@ let mapleader = ","
 " load Vundle stuff
 source ~/.vim/bundles.vim
 
+" workaround for Vundle + SSL cert issue
+let $GIT_SSL_NO_VERIFY = 'true'
+
 " load plugins
 set lpl
 
