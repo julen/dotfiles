@@ -62,3 +62,7 @@ set guioptions+=LlRrbT
 set guioptions-=LlRrbT
 
 hi ColorColumn guibg=#2d2d2d ctermbg=246
+
+" CtrlP plugin options
+let g:ctrlp_map = '<Leader>t'
+let g:ctrlp_cmd = 'CtrlP'
