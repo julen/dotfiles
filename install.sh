@@ -1,11 +1,11 @@
 #!/bin/bash
 
 makedirs() {
-  find -type d -exec mkdir -p "$HOME/{}" \;
+  find . -type d -exec mkdir -p "$HOME/{}" \;
 }
 
 linkfiles() {
-  find -type f -exec ln -bs "$PWD/{}" "$HOME/{}" \;
+  find . -type f -exec mv "$HOME/{}" "$HOME/{}.bak" \; -exec ln -s "$PWD/{}" "$HOME/{}" \;
 }
 
 
