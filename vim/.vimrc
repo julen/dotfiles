@@ -42,7 +42,9 @@ set hlsearch
 set ignorecase
 
 " mouse
-set ttymouse=xterm
+if !has("gui_macvim")
+  set ttymouse=xterm
+endif
 set mouse-=a
 
 " status
@@ -62,6 +64,11 @@ set guioptions+=LlRrbT
 set guioptions-=LlRrbT
 
 hi ColorColumn guibg=#2d2d2d ctermbg=246
+
+" Full screen editing in MacVim
+if has("gui_macvim")
+  set fullscreen
+endif
 
 " CtrlP plugin options
 let g:ctrlp_map = '<Leader>t'
