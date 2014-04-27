@@ -73,3 +73,17 @@ endif
 " CtrlP plugin options
 let g:ctrlp_map = '<Leader>t'
 let g:ctrlp_cmd = 'CtrlP'
+
+" Goyo, distraction-free writing
+nnoremap <Leader><Space> :Goyo<CR>
+
+" FIXME: save profiles in dev.vim/writing.vim and switch accordingly
+function! s:goyo_before()
+  colorscheme seoul256
+endfunction
+
+function! s:goyo_after()
+  colorscheme wombat
+endfunction
+
+let g:goyo_callbacks = [function('s:goyo_before'), function('s:goyo_after')]

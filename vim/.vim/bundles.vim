@@ -21,4 +21,7 @@ Plugin 'Syntastic'
 Plugin 'ragtag.vim'
 Plugin 'surround.vim'
 
+" Distraction-free writing
+Plugin 'junegunn/goyo.vim'
+
 call vundle#end()
