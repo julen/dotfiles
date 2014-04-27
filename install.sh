@@ -14,7 +14,7 @@ install_vim() {
   linkfiles
 
   if [ ! -d ~/.vim/bundle/vundle ]; then
-    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
   fi
 
   ex -u ~/.vim/bundles.vim '+BundleInstall' '+quit'
