@@ -11,6 +11,8 @@ Plugin 'gmarik/Vundle.vim'
 
 " Color schemes
 Plugin 'vim-scripts/Wombat'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'junegunn/seoul256.vim'
 
 " New features
 Plugin 'sessions.vim'
