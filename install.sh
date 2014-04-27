@@ -17,7 +17,7 @@ install_vim() {
     git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
   fi
 
-  ex -u ~/.vim/bundles.vim '+BundleInstall' '+quit'
+  ex -u ~/.vim/bundles.vim '+PluginInstall' '+quit'
 
   python -c'import keyword;print "\n".join(keyword.kwlist+dir(__builtins__))' |
   sort | uniq > ~/.vim/python-globals.txt

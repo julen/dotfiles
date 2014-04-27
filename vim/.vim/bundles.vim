@@ -7,16 +7,16 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 
 " Let Vundle update itself
-Bundle 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
 
 " Color schemes
-Bundle 'Wombat'
+Plugin 'vim-scripts/Wombat'
 
 " New features
-Bundle 'sessions.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Syntastic'
-Bundle 'ragtag.vim'
-Bundle 'surround.vim'
+Plugin 'sessions.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Syntastic'
+Plugin 'ragtag.vim'
+Plugin 'surround.vim'
 
 call vundle#end()
