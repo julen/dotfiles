@@ -73,6 +73,7 @@ endif
 " CtrlP plugin options
 let g:ctrlp_map = '<Leader>t'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_max_files = 0
 
 " Goyo, distraction-free writing
 nnoremap <Leader><Space> :Goyo<CR>
