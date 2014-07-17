@@ -3,7 +3,7 @@ set nocompatible
 filetype off
 
 " Load Vundle for managing scripts
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 " Let Vundle update itself
