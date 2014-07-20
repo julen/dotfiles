@@ -20,6 +20,10 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Syntastic'
 Plugin 'ragtag.vim'
 Plugin 'surround.vim'
+Plugin 'Raimondi/delimitMate'
+
+" Web development
+Plugin 'docunext/closetag.vim'
 
 " Distraction-free writing
 Plugin 'junegunn/goyo.vim'
