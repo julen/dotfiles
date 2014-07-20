@@ -24,6 +24,8 @@ Plugin 'Raimondi/delimitMate'
 
 " Web development
 Plugin 'docunext/closetag.vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'othree/html5.vim'
 
 " Distraction-free writing
 Plugin 'junegunn/goyo.vim'
