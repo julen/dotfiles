@@ -21,6 +21,7 @@ Plugin 'Syntastic'
 Plugin 'ragtag.vim'
 Plugin 'surround.vim'
 Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/nerdcommenter'
 
 " Web development
 Plugin 'docunext/closetag.vim'
