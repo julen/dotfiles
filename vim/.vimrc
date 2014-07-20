@@ -73,6 +73,12 @@ if has("gui_macvim")
   set fullscreen
 endif
 
+" Synctastic options
+" requires `npm install -g jshint jsxhint`
+let g:syntastic_javascript_checkers = ['jshint', 'jsxhint']
+" requires `pip install flake8`
+let g:syntastic_python_checkers = ['flake8']
+
 " CtrlP plugin options
 let g:ctrlp_map = '<Leader>t'
 let g:ctrlp_cmd = 'CtrlP'
