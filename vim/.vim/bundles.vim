@@ -22,6 +22,9 @@ Plugin 'ragtag.vim'
 Plugin 'surround.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
+" After installation run:
+" cd ~/.vim/bundle/YouCompleteMe && ./install.sh
+Plugin 'Valloric/YouCompleteMe'
 
 " Web development
 Plugin 'docunext/closetag.vim'
