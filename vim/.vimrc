@@ -86,7 +86,7 @@ let g:syntastic_python_checkers = ['flake8']
 " CtrlP plugin options
 let g:ctrlp_map = '<Leader>t'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_max_files = 0
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|build|po)\/|(\.(swp|git|svn))$'
 
 " Goyo, distraction-free writing
 nnoremap <Leader><Space> :Goyo<CR>
