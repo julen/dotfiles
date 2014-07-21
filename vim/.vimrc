@@ -7,6 +7,10 @@ let mapleader = ","
 " load Vundle stuff
 source ~/.vim/bundles.vim
 
+" Workaround for YouCompleteMe + Python issues
+" https://github.com/Valloric/YouCompleteMe/issues/611
+let $PATH = '/usr/local/opt/python/bin:'.$PATH
+
 " workaround for Vundle + SSL cert issue
 let $GIT_SSL_NO_VERIFY = 'true'
 
