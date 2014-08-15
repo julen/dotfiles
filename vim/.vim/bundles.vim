@@ -34,3 +34,5 @@ Plugin 'othree/html5.vim'
 Plugin 'junegunn/goyo.vim'
 
 call vundle#end()
+filetype off
+filetype plugin indent on

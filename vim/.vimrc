@@ -1,5 +1,4 @@
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 set nocompatible
 
 " leader
