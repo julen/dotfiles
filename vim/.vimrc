@@ -104,3 +104,13 @@ function! s:goyo_after()
 endfunction
 
 let g:goyo_callbacks = [function('s:goyo_before'), function('s:goyo_after')]
+
+" Powerline
+" requires running: pip install --user git+git://github.com/Lokaltog/powerline
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
+if has("gui_macvim")
+   set guifont=Meslo\ LG\ M\ DZ\ for\ Powerline:h14
+endif
