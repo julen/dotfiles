@@ -34,7 +34,7 @@ set et sw=2 sts=2 ts=2 ai
 au FileType python,xml,html,css,c,java,javascript,sh set number
 
 " Ignore useless completions
-set wildignore=*.swp,*.swo,*.bak,*.pyc,*.class
+set wildignore+=*/tmp/*,*.swp,*.swo,*.bak,*.pyc,*.class,*.zip
 
 " tab for brackets
 nnoremap <tab> %
@@ -86,7 +86,10 @@ let g:syntastic_python_checkers = ['flake8']
 " CtrlP plugin options
 let g:ctrlp_map = '<Leader>t'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|build|po)\/|(\.(swp|git|svn))$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/](node_modules|assets|(_)build|locale|po)\/|(\.(git|svn|hg))$',
+  \ 'file': '\v\.(exe|so|dll|db)$',
+  \ }
 
 " Goyo, distraction-free writing
 nnoremap <Leader><Space> :Goyo<CR>
