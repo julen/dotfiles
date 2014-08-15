@@ -29,6 +29,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'docunext/closetag.vim'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " Distraction-free writing
 Plugin 'junegunn/goyo.vim'
