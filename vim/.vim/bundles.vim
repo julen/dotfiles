@@ -1,5 +1,4 @@
 " Need this here for Vundle
-set nocompatible
 filetype off
 
 " Load Vundle for managing scripts

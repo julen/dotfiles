@@ -1,5 +1,6 @@
 filetype plugin on
 filetype indent on
+set nocompatible
 
 " leader
 let mapleader = ","
