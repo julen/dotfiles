@@ -15,6 +15,7 @@ Plugin 'junegunn/seoul256.vim'
 
 " New features
 Plugin 'sessions.vim'
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Syntastic'
 Plugin 'ragtag.vim'
