@@ -77,9 +77,9 @@ if has("gui_macvim")
   set fullscreen
 endif
 
-" Synctastic options
-" requires `npm install -g jshint jsxhint`
-let g:syntastic_javascript_checkers = ['jshint', 'jsxhint']
+" Syntastic options
+" requires `npm install -g eslint`
+let g:syntastic_javascript_checkers = ['eslint']
 " requires `pip install flake8`
 let g:syntastic_python_checkers = ['flake8']
 
