@@ -102,7 +102,7 @@ let g:ctrlp_map = '<Leader>t'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/](node_modules|assets|(_)build|locale|po)\/|(\.(git|svn|hg))$',
-  \ 'file': '\v\.(exe|so|dll|db)$',
+  \ 'file': '\v\.(exe|so|dll|db|bundle.js|bundle.js.map)$',
   \ }
 
 " Goyo, distraction-free writing
