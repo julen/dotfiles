@@ -63,7 +63,11 @@ set report=0
 set numberwidth=1
 
 " appeareance
-colorscheme wombat
+if has("gui_running")
+  colorscheme OceanicNext
+else
+  colorscheme wombat
+endif
 syntax on
 
 " gui
@@ -100,7 +104,11 @@ function! s:goyo_before()
 endfunction
 
 function! s:goyo_after()
-  colorscheme wombat
+  if has("gui_running")
+    colorscheme OceanicNext
+  else
+    colorscheme wombat
+  endif
 endfunction
 
 let g:goyo_callbacks = [function('s:goyo_before'), function('s:goyo_after')]

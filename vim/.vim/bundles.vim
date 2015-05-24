@@ -12,6 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-scripts/Wombat'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'junegunn/seoul256.vim'
+Plugin 'yosiat/oceanic-next-vim'
 
 " New features
 Plugin 'sessions.vim'
