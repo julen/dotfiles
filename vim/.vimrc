@@ -27,6 +27,16 @@ au FileType python setl fdm=syntax fen
 " C editing
 au FileType c setl cin
 
+
+" JavaScript
+"
+" vim-javascript
+let g:javascript_conceal_function = "ƒ"
+"
+" vim-jsx
+let g:jsx_ext_required = 0
+
+
 " default editing
 set et sw=2 sts=2 ts=2 ai
 
