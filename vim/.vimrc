@@ -46,10 +46,6 @@ au FileType python,xml,html,css,c,java,javascript,sh set number
 " Ignore useless completions
 set wildignore+=*/tmp/*,*.swp,*.swo,*.bak,*.pyc,*.class,*.zip
 
-" tab for brackets
-nnoremap <tab> %
-vnoremap <tab> %
-
 " 74 char-width
 set textwidth=74
 set cc=+6
