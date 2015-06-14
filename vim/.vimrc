@@ -62,7 +62,7 @@ set ignorecase
 if !has("gui_macvim")
   set ttymouse=xterm
 endif
-set mouse-=a
+set mouse=a
 
 " status
 set shortmess+=a
