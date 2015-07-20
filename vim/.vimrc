@@ -46,9 +46,9 @@ au FileType python,xml,html,css,c,java,javascript,sh set number
 " Ignore useless completions
 set wildignore+=*/tmp/*,*.swp,*.swo,*.bak,*.pyc,*.class,*.zip
 
-" 74 char-width
-set textwidth=74
-set cc=+6
+" 80 char-width (+4 soft limit)
+set textwidth=80
+set colorcolumn=+4
 
 " search
 set hlsearch
