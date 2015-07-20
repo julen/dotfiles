@@ -71,16 +71,19 @@ set numberwidth=1
 " appeareance
 if has("gui_running")
   colorscheme OceanicNext
+
+  " Customize some colors for all schemes
+  autocmd ColorScheme * highlight ColorColumn guibg=#2d2d2d ctermbg=246
+  autocmd ColorScheme * highlight Normal guifg=#cdd3de guibg=#1b2b34 ctermbg=235 ctermfg=188
 else
   colorscheme wombat
 endif
+
 syntax on
 
 " gui
 set guioptions+=LlRrbT
 set guioptions-=LlRrbT
-
-hi ColorColumn guibg=#2d2d2d ctermbg=246
 
 " Full screen editing in MacVim
 if has("gui_macvim")
