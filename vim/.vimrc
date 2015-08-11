@@ -68,16 +68,14 @@ set laststatus=2
 set report=0
 set numberwidth=1
 
-" appeareance
-if has("gui_running")
-  colorscheme OceanicNext
 
-  " Customize some colors for all schemes
-  autocmd ColorScheme * highlight ColorColumn guibg=#2d2d2d ctermbg=246
-  autocmd ColorScheme * highlight Normal guifg=#cdd3de guibg=#1b2b34 ctermbg=235 ctermfg=188
-else
-  colorscheme wombat
-endif
+" Customize some colors for all schemes
+autocmd ColorScheme * highlight ColorColumn guibg=#2d2d2d ctermbg=246
+autocmd ColorScheme * highlight Normal guifg=#cdd3de guibg=#1b2b34 ctermbg=235 ctermfg=188
+
+" Appeareance
+colorscheme wombat
+
 
 syntax on
 
@@ -113,11 +111,7 @@ function! s:goyo_before()
 endfunction
 
 function! s:goyo_after()
-  if has("gui_running")
-    colorscheme OceanicNext
-  else
-    colorscheme wombat
-  endif
+  colorscheme wombat
 endfunction
 
 let g:goyo_callbacks = [function('s:goyo_before'), function('s:goyo_after')]
