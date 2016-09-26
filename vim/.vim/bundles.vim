@@ -35,6 +35,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'ap/vim-css-color'
 Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'mtscout6/syntastic-local-eslint.vim'
 
 " Powerline
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
