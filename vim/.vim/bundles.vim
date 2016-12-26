@@ -28,16 +28,16 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'Valloric/YouCompleteMe'
 
 " Languages
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'pangloss/vim-javascript'
 Plugin 'rust-lang/rust.vim'
 
 " Web development
 Plugin 'docunext/closetag.vim'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'othree/html5.vim'
-Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'ap/vim-css-color'
-Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'mtscout6/syntastic-local-eslint.vim'
 
 " Powerline
