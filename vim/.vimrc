@@ -100,6 +100,9 @@ syntax on
 set guioptions+=LlRrbT
 set guioptions-=LlRrbT
 
+" YouCompleteMe keyboard shortcuts
+let g:ycm_key_list_select_completion = ['<tab>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<s-tab>', '<Up>']
 
 " Syntastic options
 " requires `npm install -g eslint`
