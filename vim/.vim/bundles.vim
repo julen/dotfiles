@@ -27,6 +27,9 @@ Plugin 'scrooloose/nerdcommenter'
 " cd ~/.vim/bundle/YouCompleteMe && ./install.sh
 Plugin 'Valloric/YouCompleteMe'
 
+" Languages
+Plugin 'rust-lang/rust.vim'
+
 " Web development
 Plugin 'docunext/closetag.vim'
 Plugin 'hail2u/vim-css3-syntax'
