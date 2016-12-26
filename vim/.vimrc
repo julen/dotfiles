@@ -100,10 +100,6 @@ syntax on
 set guioptions+=LlRrbT
 set guioptions-=LlRrbT
 
-" Full screen editing in MacVim
-if has("gui_macvim")
-  set fullscreen
-endif
 
 " Syntastic options
 " requires `npm install -g eslint`
