@@ -10,6 +10,7 @@ source ~/.vim/bundles.vim
 " Workaround for YouCompleteMe + Python issues
 " https://github.com/Valloric/YouCompleteMe/issues/611
 let $PATH = '/usr/local/bin:'.$PATH
+"let g:ycm_path_to_python_interpreter = '/usr/local/bin/python'
 
 " workaround for Vundle + SSL cert issue
 let $GIT_SSL_NO_VERIFY = 'true'
