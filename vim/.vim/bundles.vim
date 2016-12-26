@@ -28,6 +28,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'Valloric/YouCompleteMe'
 
 " Languages
+Plugin 'cespare/vim-toml'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'pangloss/vim-javascript'
 Plugin 'rust-lang/rust.vim'
