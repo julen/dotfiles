@@ -32,6 +32,7 @@ Plugin 'cespare/vim-toml'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'pangloss/vim-javascript'
 Plugin 'rust-lang/rust.vim'
+Plugin 'fatih/vim-go'
 
 " Web development
 Plugin 'docunext/closetag.vim'

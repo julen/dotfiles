@@ -42,7 +42,7 @@ let g:jsx_ext_required = 0
 set et sw=2 sts=2 ts=2 ai
 
 " numbers for coding
-au FileType python,xml,html,css,c,java,javascript,sh set number
+au FileType go,python,xml,html,css,c,java,javascript,sh set number
 
 " Ignore useless completions
 set wildignore+=*/tmp/*,*.swp,*.swo,*.bak,*.pyc,*.class,*.zip
