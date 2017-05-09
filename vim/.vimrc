@@ -39,7 +39,7 @@ let g:jsx_ext_required = 0
 
 
 " default editing
-set et sw=2 sts=2 ts=2 ai
+set expandtab shiftwidth=2 softtabstop=2 tabstop=2 autoindent
 
 " numbers for coding
 au FileType go,python,xml,html,css,c,java,javascript,sh set number
