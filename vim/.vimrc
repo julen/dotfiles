@@ -37,6 +37,11 @@ let g:javascript_conceal_function = "ƒ"
 " vim-jsx
 let g:jsx_ext_required = 0
 
+" CSS
+"
+autocmd Filetype css setlocal tabstop=4
+
+
 
 " default editing
 set expandtab shiftwidth=2 softtabstop=2 tabstop=2 autoindent
