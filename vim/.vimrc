@@ -42,6 +42,10 @@ let g:jsx_ext_required = 0
 autocmd Filetype css setlocal tabstop=4
 
 
+" Go
+"
+autocmd Filetype go setlocal tabstop=4
+
 
 " default editing
 set expandtab shiftwidth=2 softtabstop=2 tabstop=2 autoindent
