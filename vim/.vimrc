@@ -110,6 +110,9 @@ let g:ycm_key_list_previous_completion = ['<s-tab>', '<Up>']
 let g:syntastic_javascript_checkers = ['eslint']
 " requires `pip install flake8`
 let g:syntastic_python_checkers = ['flake8']
+" otherwise vim freezes upon save
+" refs. https://github.com/fatih/vim-go/issues/144#issuecomment-136145692
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 
 " CtrlP plugin options
 let g:ctrlp_map = '<Leader>t'
