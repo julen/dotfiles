@@ -44,7 +44,7 @@ autocmd Filetype css setlocal tabstop=4
 
 " Go
 "
-autocmd Filetype go setlocal tabstop=4
+autocmd Filetype go setlocal shiftwidth=4 tabstop=4
 " use `goimports` for formatting
 let g:go_fmt_command = "goimports"
 
