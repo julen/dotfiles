@@ -26,6 +26,7 @@ Plugin 'scrooloose/nerdcommenter'
 " After installation run:
 " cd ~/.vim/bundle/YouCompleteMe && ./install.sh
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'wesQ3/vim-windowswap'
 
 " Languages
 Plugin 'cespare/vim-toml'
