@@ -7,6 +7,8 @@ let mapleader = ","
 " load Vundle stuff
 source ~/.vim/bundles.vim
 
+" YouCompleteMe requires setting UTF-8 encoding explicitly
+set encoding=utf-8
 " Workaround for YouCompleteMe + Python issues
 " https://github.com/Valloric/YouCompleteMe/issues/611
 let $PATH = '/usr/local/bin:'.$PATH
