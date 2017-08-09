@@ -108,7 +108,7 @@ autocmd ColorScheme * highlight Normal guifg=#cdd3de guibg=#1b2b34 ctermbg=235 c
 if (has("termguicolors"))
   set termguicolors
 endif
-let g:default_colorscheme = "wombat"
+let g:default_colorscheme = "OceanicNext"
 execute "colorscheme ".g:default_colorscheme
 
 
