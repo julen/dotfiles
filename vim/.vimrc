@@ -105,7 +105,8 @@ autocmd ColorScheme * highlight ColorColumn guibg=#2d2d2d ctermbg=246
 autocmd ColorScheme * highlight Normal guifg=#cdd3de guibg=#1b2b34 ctermbg=235 ctermfg=188
 
 " Appeareance
-colorscheme wombat
+let g:default_colorscheme = "wombat"
+execute "colorscheme ".g:default_colorscheme
 
 
 syntax on
@@ -144,7 +145,7 @@ function! s:goyo_before()
 endfunction
 
 function! s:goyo_after()
-  colorscheme wombat
+  execute "colorscheme ".g:default_colorscheme
 endfunction
 
 let g:goyo_callbacks = [function('s:goyo_before'), function('s:goyo_after')]
