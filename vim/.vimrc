@@ -105,6 +105,9 @@ autocmd ColorScheme * highlight ColorColumn guibg=#2d2d2d ctermbg=246
 autocmd ColorScheme * highlight Normal guifg=#cdd3de guibg=#1b2b34 ctermbg=235 ctermfg=188
 
 " Appeareance
+if (has("termguicolors"))
+  set termguicolors
+endif
 let g:default_colorscheme = "wombat"
 execute "colorscheme ".g:default_colorscheme
 
