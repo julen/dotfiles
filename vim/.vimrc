@@ -55,7 +55,7 @@ let g:go_fmt_command = "goimports"
 set expandtab shiftwidth=2 softtabstop=2 tabstop=2 autoindent
 
 " numbers for coding
-au FileType go,python,xml,html,css,c,java,javascript,sh set number
+au FileType go,python,xml,html,css,c,java,javascript,sh,vim set number
 
 " Ignore useless completions
 set wildignore+=*/tmp/*,*.swp,*.swo,*.bak,*.pyc,*.class,*.zip
