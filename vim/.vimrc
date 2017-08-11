@@ -25,6 +25,11 @@ set lpl
 nmap <Leader>d :b#<bar>bd#<CR>
 
 
+" user-expected backspace behavior (or vim will revert to vi behavior)
+" refs. https://github.com/Homebrew/legacy-homebrew/issues/46899#issuecomment-163987725
+set backspace=indent,eol,start
+
+
 " Python editing
 au FileType python setl et sw=4 sts=4 ts=4
 " add completions for builtins to python
