@@ -20,6 +20,11 @@ let $GIT_SSL_NO_VERIFY = 'true'
 " load plugins
 set lpl
 
+
+" buffer management
+nmap <Leader>d :b#<bar>bd#<CR>
+
+
 " Python editing
 au FileType python setl et sw=4 sts=4 ts=4
 " add completions for builtins to python
