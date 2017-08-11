@@ -57,8 +57,14 @@ autocmd Filetype css setlocal tabstop=4
 " Go
 "
 autocmd Filetype go setlocal shiftwidth=4 tabstop=4
+
 " use `goimports` for formatting
 let g:go_fmt_command = "goimports"
+
+" go metalinter trigger
+au FileType go nmap <Leader>l <Plug>(go-metalinter)
+" refs. https://github.com/fatih/vim-go/issues/223
+set completeopt=menu
 
 
 " default editing
