@@ -24,7 +24,7 @@ Plugin 'surround.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 " After installation run:
-" cd ~/.vim/bundle/YouCompleteMe && ./install.sh
+" cd ~/.vim/bundle/YouCompleteMe && python install.py
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'wesQ3/vim-windowswap'
 
