@@ -53,4 +53,10 @@ if [[ -f "$ROOT_DIR/macos.sh" ]]; then
   "$ROOT_DIR/macos.sh"
 fi
 
+# ---- Dotfiles
+
+info "Linking dotfiles"
+
+"$ROOT_DIR/dotfiles.sh" install
+
 info "Setup complete"
