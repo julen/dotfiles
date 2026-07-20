@@ -4,3 +4,6 @@ setopt CORRECT    # suggest fixes for typo'd commands
 
 # ---- editor
 export EDITOR=vim
+
+# ---- keyboard
+export WORDCHARS=""
