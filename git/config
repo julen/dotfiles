@@ -1,0 +1,9 @@
+[user]
+	email = julenx@gmail.com
+	name = Julen Ruiz Aizpuru
+[credential]
+	helper = osxkeychain
+[pull]
+	rebase = true
+[rebase]
+	autosquash = true
