@@ -1,0 +1,63 @@
+" ---- Plugins
+call plug#begin()
+
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'prabirshrestha/vim-lsp'
+
+call plug#end()
+
+" ---- Global
+let mapleader = ","
+
+" ---- Appearance
+let g:seoul256_background = 234
+colorscheme seoul256
+
+" ---- Writing
+nnoremap <Leader><Space> :Goyo<CR>
+
+" ---- Coding
+set expandtab     " Convert tabs to spaces
+set tabstop=4     " Insert 4 spaces for a manual tab
+set shiftwidth=4  " Indent by 4 spaces when using formatting commands (like < or >)
+set softtabstop=4 " Make backspace delete 4 spaces seamlessly
+
+augroup NumbersForCode
+  autocmd!
+  autocmd FileType c,cpp,python,javascript,typescript,go,rust,java,sh,ruby,php,lua,vim,html,css,json,yaml,zig
+    \ setlocal number
+augroup END
+
+" ---- zig lsp
+if executable('zls')
+    augroup zig_lsp
+        autocmd!
+        autocmd User lsp_setup call lsp#register_server({
+            \ 'name': 'zls',
+            \ 'cmd': {server_info -> ['zls']},
+            \ 'allowlist': ['zig'],
+            \ })
+    augroup END
+endif
+
+" ---- LSP behavior
+function! s:on_lsp_buffer_enabled() abort
+  setlocal omnifunc=lsp#complete
+  setlocal signcolumn=yes
+
+  if exists('+tagfunc')
+    setlocal tagfunc=lsp#tagfunc
+  endif
+
+  nnoremap <buffer> gd <plug>(lsp-definition)
+  nnoremap <buffer> gD <plug>(lsp-declaration)
+  nnoremap <buffer> gr <plug>(lsp-references)
+  nnoremap <buffer> gy <plug>(lsp-type-definition)
+  nnoremap <buffer> K  <plug>(lsp-hover)
+  nnoremap <buffer> <F2> <plug>(lsp-rename)
+  nnoremap <buffer> [d <plug>(lsp-previous-diagnostic)
+  nnoremap <buffer> ]d <plug>(lsp-next-diagnostic)
+endfunction
+
+autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
