@@ -16,7 +16,7 @@ managed_files() {
   while IFS= read -r -d '' src; do
     rel="${src#$ROOT_DIR/}"
     printf '%s\t%s\n' "$src" "$HOME/$rel"
-  done < <(find "$ROOT_DIR" -maxdepth 1 -type f -name '.*' ! -name '.DS_Store' ! -name '*.swp' -print0)
+  done < <(fd --hidden --type f --max-depth 1 --print0 '^\.' "$ROOT_DIR")
 
   # Top-level directories mirror into XDG config, e.g. zsh/.zshrc -> ~/.config/zsh/.zshrc.
   for project in "$ROOT_DIR"/*/; do
@@ -25,7 +25,7 @@ managed_files() {
     while IFS= read -r -d '' src; do
       rel="${src#$project}"
       printf '%s\t%s\n' "$src" "${XDG_CONFIG_HOME:-$HOME/.config}/$(basename "$project")/$rel"
-    done < <(find "$project" -type f ! -name '.DS_Store' -print0)
+    done < <(fd --hidden --type f --print0 . "$project")
   done
 }
 
