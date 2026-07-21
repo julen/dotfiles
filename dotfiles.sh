@@ -21,6 +21,7 @@ managed_files() {
   # Top-level directories mirror into XDG config, e.g. zsh/.zshrc -> ~/.config/zsh/.zshrc.
   for project in "$ROOT_DIR"/*/; do
     [[ -d "$project" ]] || continue
+    [[ "$(basename "$project")" == "macos" ]] && continue
 
     while IFS= read -r -d '' src; do
       rel="${src#$project}"
