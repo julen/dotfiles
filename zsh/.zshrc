@@ -24,7 +24,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"      # colorize completi
 zmodload zsh/complist
 bindkey -M menuselect '^[[Z' reverse-menu-complete           # shift-tab cycles backwards
 
-# ---- Git-aware prompt
+# ---- Prompt
 autoload -Uz vcs_info
 setopt PROMPT_SUBST
 
@@ -37,8 +37,11 @@ zstyle ':vcs_info:git:*' actionformats ' %F{cyan}(%b|%a%f%c%u'  # e.g. mid-rebas
 
 precmd() { vcs_info }
 
-# path (blue) + git info (cyan, with dot markers for dirty/staged) + prompt char
-PROMPT='%F{blue}%~%f${vcs_info_msg_0_} $ '
+CURRENT_PATH='%F{blue}%~%f'
+NEWLINE=$'\n'
+SYMBOL='%(?.%F{default}.%F{red})$%f'
+
+PROMPT='${CURRENT_PATH}${vcs_info_msg_0_} ${NEWLINE}${SYMBOL} '
 
 
 # ---- Domain-specific configs
