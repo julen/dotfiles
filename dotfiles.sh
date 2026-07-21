@@ -24,7 +24,7 @@ managed_files() {
 
     while IFS= read -r -d '' src; do
       rel="${src#$project}"
-      printf '%s\t%s\n' "$src" "${XDG_CONFIG_HOME:-$HOME/.config}/$(basename "$project")/$rel"
+      printf '%s\t%s\n' "$src" "${XDG_CONFIG_HOME}/$(basename "$project")/$rel"
     done < <(fd --hidden --type f --print0 . "$project")
   done
 }
