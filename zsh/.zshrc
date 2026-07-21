@@ -30,10 +30,10 @@ setopt PROMPT_SUBST
 
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr '%F{green}●%f'
-zstyle ':vcs_info:git:*' unstagedstr '%F{yellow}●%f'
-zstyle ':vcs_info:git:*' formats ' %F{cyan}(%b%f%c%u)'
-zstyle ':vcs_info:git:*' actionformats ' %F{cyan}(%b|%a%f%c%u)'  # e.g. mid-rebase
+zstyle ':vcs_info:git:*' stagedstr '%F{green}+%f'
+zstyle ':vcs_info:git:*' unstagedstr '%F{yellow}!%f'
+zstyle ':vcs_info:git:*' formats ' %F{cyan}(%b)%f%c%u'
+zstyle ':vcs_info:git:*' actionformats ' %F{cyan}(%b|%a%f%c%u'  # e.g. mid-rebase
 
 precmd() { vcs_info }
 
