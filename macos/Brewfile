@@ -9,9 +9,9 @@ brew "proto"
 brew "ripgrep"
 brew "yt-dlp"
 
-cask "dannystewart/apps/volumehud"
+cask "dannystewart/apps/volumehud", trusted: true
 cask "ghostty"
-cask "grishka/grishka/neardrop"
+cask "grishka/grishka/neardrop", trusted: true
 cask "pearcleaner"
 cask "raycast"
 cask "spotify"
