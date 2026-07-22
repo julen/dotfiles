@@ -49,13 +49,22 @@ if executable('zls')
 endif
 
 " ---- LSP behavior
+let g:lsp_async_completion = 1
+
 function! s:on_lsp_buffer_enabled() abort
+  set autocomplete
+  set completeopt=menuone,noinsert,popup
   setlocal omnifunc=lsp#complete
   setlocal signcolumn=yes
+  setlocal complete+=o
 
   if exists('+tagfunc')
     setlocal tagfunc=lsp#tagfunc
   endif
+
+  inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+  inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
   nnoremap <buffer> gd <plug>(lsp-definition)
   nnoremap <buffer> gD <plug>(lsp-declaration)
