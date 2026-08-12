@@ -30,8 +30,37 @@ managed_files() {
   done
 }
 
+managed_source() {
+  local managed_list="$1" src="$2"
+
+  awk -F '\t' -v src="$src" '$1 == src { found = 1 } END { exit !found }' "$managed_list"
+}
+
+prune_stale_links() {
+  local managed_list="$1" link target
+
+  while IFS= read -r -d '' link; do
+    target="$(readlink "$link" 2>/dev/null || true)"
+
+    if [[ "$target" == "$ROOT_DIR"/* ]] && ! managed_source "$managed_list" "$target"; then
+      echo "Removing stale link $link -> $target"
+      rm "$link"
+    fi
+  done < <(
+    {
+      find "$HOME" -maxdepth 1 -type l -name '.*' -print0
+      [[ -d "$XDG_CONFIG_HOME" ]] && find "$XDG_CONFIG_HOME" -type l -print0
+    } 2>/dev/null
+  )
+}
+
 install() {
-  local src dest current backup
+  local src dest current backup managed_list
+
+  managed_list="$(mktemp)"
+  managed_files > "$managed_list"
+
+  prune_stale_links "$managed_list"
 
   while IFS=$'\t' read -r src dest; do
     mkdir -p "$(dirname "$dest")"
@@ -52,7 +81,9 @@ install() {
 
     echo "Linking $dest -> $src"
     ln -s "$src" "$dest"
-  done < <(managed_files)
+  done < "$managed_list"
+
+  rm -f "$managed_list"
 }
 
 uninstall() {
