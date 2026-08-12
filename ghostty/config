@@ -1,0 +1,22 @@
+# ---- appearance
+cursor-style = block
+cursor-style-blink = false
+theme = TokyoNight Night
+# we wanted to remove window decorations but that breaks cmd+shift+drag
+# refs. https://github.com/ghostty-org/ghostty/discussions/3053
+# refs. https://github.com/ghostty-org/ghostty/discussions/5513
+# window-decoration = false
+window-padding-balance = true
+
+# ---- macos
+macos-non-native-fullscreen = true
+macos-titlebar-style = hidden
+
+# ---- extras
+copy-on-select = true
+shell-integration-features = no-cursor
+link-url = true
+
+# ---- auto update
+auto-update = download
+auto-update-channel = stable
