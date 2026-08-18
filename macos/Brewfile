@@ -1,4 +1,7 @@
 brew "bat"
+brew "colima"
+brew "docker"
+brew "docker-compose"
 brew "fd"
 brew "ffmpeg"
 brew "fzf"
