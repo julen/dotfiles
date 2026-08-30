@@ -11,6 +11,7 @@ call plug#begin()
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'tpope/vim-commentary'
 Plug 'https://codeberg.org/ziglang/zig.vim'
 
 call plug#end()
@@ -30,6 +31,10 @@ set expandtab     " Convert tabs to spaces
 set tabstop=4     " Insert 4 spaces for a manual tab
 set shiftwidth=4  " Indent by 4 spaces when using formatting commands (like < or >)
 set softtabstop=4 " Make backspace delete 4 spaces seamlessly
+
+inoremap <Esc>[99~ <C-O>:Commentary<CR>
+nnoremap <Esc>[99~ :Commentary<CR>
+vnoremap <Esc>[99~ :Commentary<CR>
 
 augroup NumbersForCode
   autocmd!
