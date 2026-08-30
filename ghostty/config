@@ -8,6 +8,9 @@ theme = TokyoNight Night
 # window-decoration = false
 window-padding-balance = true
 
+# ---- keybindings
+keybind = super+slash=text:\x1b[99~
+
 # ---- macos
 macos-non-native-fullscreen = true
 macos-titlebar-style = hidden
