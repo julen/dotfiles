@@ -15,6 +15,7 @@ brew "yt-dlp"
 cask "dannystewart/apps/volumehud", trusted: true
 cask "ghostty"
 cask "grishka/grishka/neardrop", trusted: true
+cask "imageoptim"
 cask "pearcleaner"
 cask "raycast"
 cask "spotify"
