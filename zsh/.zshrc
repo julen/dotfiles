@@ -24,6 +24,16 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"      # colorize completi
 zmodload zsh/complist
 bindkey -M menuselect '^[[Z' reverse-menu-complete           # shift-tab cycles backwards
 
+# ---- Reverse search
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+# Bind arrow keys for standard mode
+bindkey '^[[A' up-line-or-beginning-search
+bindkey '^[[B' down-line-or-beginning-search
+
 # ---- Prompt
 autoload -Uz vcs_info
 setopt PROMPT_SUBST
